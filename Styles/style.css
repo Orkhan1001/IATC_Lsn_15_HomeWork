@@ -1,0 +1,149 @@
+
+/* HEADER */
+header{
+    min-height: 150px;
+    background-image: url(../Images/new-jumbotron-background-Gold-Bond-Ultimate.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+header .top_of_header{
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* logo */
+header .logo h1{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 70px;
+    font-weight: 900;
+    font-family: 'Freestyle Script';
+}
+
+/* normal nav */
+header .t_nav{
+    min-height: 70px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header .t_nav li a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s all;
+}
+header .t_nav li a:hover{
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(2, 152, 169);
+}
+
+/* xs nav */
+header .t_xs_nav{
+    height: 70px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 50px;
+}
+header .t_xs_nav ul{
+    width: 80vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 55px;
+    left: -72vw;
+}
+header .t_xs_nav ul li a{
+    color: #fff;
+}
+
+/* END OF HEADER */
+
+/*/////////////////////*/
+
+/* MAIN CONTENT */
+/* main content header */
+.t_container .t_header h2, .t_container .t_header p{
+    text-align: center;
+}
+
+/* main content cards */
+.t_container .t_cards{
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+}
+.t_container .t_cards .t_icon_and_text{
+    background-color: #fff;
+    min-height: 200px;
+    /* border: solid rgba(78, 78, 78, 0.1); */
+    box-shadow: 0px 10px 5px 0px rgba(78, 78, 78, 0.1) ;
+}
+.t_container .t_cards .t_top_of_iconDiv{
+    height: 50px;
+}
+.t_container .t_cards .t_iconDiv{
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.t_container .t_cards .t_iconDiv .t_icon{
+    background-color: #fff;
+    color: rgb(2, 152, 169);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    font-size: 50px;
+    top: -25px;
+}
+.t_container .t_cards .t_text{
+    margin: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.t_container .t_cards .t_text h3{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.t_container .t_cards .t_text p{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+/* END OF MAIN CONTENT */
+
+/*/////////////////////*/
+
+/* ENDING */
+.t_empty{margin-top: 100px;}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:768px) {
+    header .t_nav{
+        display: none;
+    }
+    header .t_xs_nav{
+        display: flex;
+    }
+}
